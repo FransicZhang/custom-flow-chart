@@ -1,62 +1,53 @@
-# FlowDialog 流程图组件示例项目
+![项目演示](assets/PixPin_2025-07-25_09-29-25.gif)
 
-本项目为开源的 FlowDialog 流程图组件演示，支持节点拖拽、缩放、右键菜单、连线等功能，适用于数据流可视化场景。
+# Custom Flow Chart
+
+## 项目简介
+
+本项目是一个基于Vue 3的自定义流程图组件，支持节点自定义、拖拽、连线、属性配置等功能，适用于数据流、业务流程、任务流等多种场景。
 
 ## 目录结构
 
 ```
-FlowDialog-demo/
-├── package.json
-├── README.md
+custom-flow-chart/
+├── package.json             # 项目依赖配置
+├── package-lock.json        # 锁定依赖版本
+├── README.md                # 项目说明文档
 └── src/
-    ├── App.vue
-    └── components/
-        └── FlowDialog/
-            ├── FlowDialog.vue
-            ├── DataSourceNode.vue
-            ├── MergeNode.vue
-            └── utils.js
+    ├── App.vue              # 入口组件
+    ├── main.js              # 入口文件
+    ├── components/          # 主要组件
+    │   ├── CustomFlow.vue       # 流程图主组件
+    │   ├── DataSourceNode.vue   # 数据源节点
+    │   ├── MergeDialog.vue      # 合并弹窗
+    │   ├── MergeNode.vue        # 合并节点
+    │   └── utils.js             # 工具函数
+    └── pages/
+        └── index.vue        # 页面入口
 ```
 
-## 安装依赖
+## 安装与启动
 
-```bash
-npm install
-```
+1. 安装依赖：
+   ```bash
+   npm install
+   ```
+2. 启动项目：
+   ```bash
+   npm run serve
+   ```
 
-## 运行示例
+## 主要功能
+- 支持自定义节点类型（如数据源节点、合并节点等）
+- 节点可拖拽、连线，支持属性配置
+- 可扩展弹窗、节点等自定义组件
+- 响应式数据驱动，流程图动态更新
 
-```bash
-npm run serve
-```
+## 使用场景
+- 数据处理流程可视化（如ETL、数据同步等）
+- 业务流程建模（如审批流、订单流转等）
+- 自动化运维编排（如CI/CD流程、自动化脚本等）
+- 教学演示、算法流程展示
 
-## 用法说明
-
-1. 复制 `src/components/FlowDialog` 目录到你的 Vue2 项目中。
-2. 在页面中引入并注册 `FlowDialog` 组件：
-
-```vue
-<template>
-  <FlowDialog />
-</template>
-
-<script>
-import FlowDialog from './components/FlowDialog/FlowDialog.vue'
-export default {
-  components: { FlowDialog }
-}
-</script>
-```
-
-3. 依赖 `element-ui`，请确保已在项目中全局引入。
-
-## 功能特性
-- 支持节点拖拽、缩放、右键菜单
-- 数据源节点、合并节点可视化
-- 节点间可拖拽连线
-- 支持流程数据导出
-
-## License
-MIT
-
-![演示动图](assets/PixPin_2025-07-25_09-29-25.gif)
+## 贡献与反馈
+欢迎提交Issue或PR，提出建议和反馈。
