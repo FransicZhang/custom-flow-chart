@@ -1,7 +1,7 @@
 {
-  "name": "flowdialog-demo",
+  "name": "custom-flow-chart",
   "version": "1.0.0",
-  "description": "FlowDialog流程图组件开源示例项目",
+  "description": "CustomFlowChart流程图组件开源示例项目",
   "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",

@@ -1,13 +1,13 @@
 <template>
     <div style="padding: 40px; background: #f0f2f5;">
-        <h2>FlowDialog 流程图组件示例</h2>
-        <flow-dialog />
+        <h2>CustomFlow 流程图组件示例</h2>
+        <custom-flow />
     </div>
 </template>
 
 <script>
-import FlowDialog from '../components/FlowDialog.vue'
+import CustomFlow from '../components/CustomFlow.vue'
 export default {
-    components: { FlowDialog }
+    components: { CustomFlow }
 }
 </script>
